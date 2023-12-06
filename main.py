@@ -1,4 +1,4 @@
-
+import os
 TEXT = "YOUR TEXT HERE"
 TOKEN = 'YOUR API KEY HERE'
 
@@ -6,7 +6,6 @@ TOKEN = 'YOUR API KEY HERE'
 # made by StackingBooks
 
 import requests
-import os
 import subprocess
 
 def get_duration(file):
