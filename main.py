@@ -52,5 +52,5 @@ output = str(os.getcwd()) + "/speak.mp4"
 final = str(os.getcwd()) + "/final.mp4"
 length = get_duration(audio)
 
-os.system(f'ffmpeg -stream_loop 1 -t {length} -i {talk} -i {audio} -c copy -y {output}')
-os.system(f'ffmpeg -i {start} -i {output} -i {end} -filter_complex "[0:v] [0:a] [1:v] [1:a] [2:v] [2:a] concat=n=3:v=1:a=1 [v] [a]" -map "[v]" -map "[a]" -y {final}')
+os.system(f'./ffmpeg-4.3-amd64-static/ffmpeg -stream_loop 1 -t {length} -i {talk} -i {audio} -c copy -y {output}')
+os.system(f'./ffmpeg-4.3-amd64-static/ffmpeg -i {start} -i {output} -i {end} -filter_complex "[0:v] [0:a] [1:v] [1:a] [2:v] [2:a] concat=n=3:v=1:a=1 [v] [a]" -map "[v]" -map "[a]" -y {final}')
