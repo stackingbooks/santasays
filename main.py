@@ -1,6 +1,6 @@
 import os
 TEXT = "YOUR TEXT HERE"
-TOKEN = 'YOUR API KEY HERE'
+TOKEN = os.environ['TOKEN']
 
 # Do not change anything starting from here
 # made by StackingBooks
