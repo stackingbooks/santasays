@@ -1,5 +1,7 @@
 import os
-TEXT = "YOUR TEXT HERE"
+import sys
+
+TEXT = sys.argv[1]
 TOKEN = os.environ['TOKEN']
 
 # Do not change anything starting from here
